@@ -1,6 +1,6 @@
 require 'test/test_helper'
 require 'fileutils'
-#require 'fakes3/server'
+#require 'fakes3-rack/server'
 require 'right_aws'
 
 class RightAWSCommandsTest < Test::Unit::TestCase
@@ -50,7 +50,7 @@ class RightAWSCommandsTest < Test::Unit::TestCase
     obj = @s3.get("s3media","dir/right/123.txt") do |chunk|
       output << chunk
     end
-    
+
     assert_equal "recursive", output
   end
 

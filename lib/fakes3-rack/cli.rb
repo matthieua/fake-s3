@@ -1,8 +1,8 @@
 require 'thor'
-require 'fakes3/server'
-require 'fakes3/version'
+require 'fakes3-rack/server'
+require 'fakes3-rack/version'
 
-module FakeS3
+module FakeS3Rack
   class CLI < Thor
     default_task("server")
 
@@ -43,11 +43,11 @@ module FakeS3
       server.serve
     end
 
-    desc "version", "Report the current fakes3 version"
+    desc "version", "Report the current fakes3-rack version"
     def version
       puts <<"EOF"
 ======================
-FakeS3 #{FakeS3::VERSION}
+FakeS3Rack #{FakeS3Rack::VERSION}
 
 Copyright 2012, Curtis Spencer (@jubos)
 EOF

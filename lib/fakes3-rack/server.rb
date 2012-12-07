@@ -4,13 +4,13 @@ require 'rack/response'
 require 'rack/server'
 require 'rack/lint'
 
-require 'fakes3/file_store'
-require 'fakes3/xml_adapter'
-require 'fakes3/bucket_query'
-require 'fakes3/unsupported_operation'
-require 'fakes3/errors'
+require 'fakes3-rack/file_store'
+require 'fakes3-rack/xml_adapter'
+require 'fakes3-rack/bucket_query'
+require 'fakes3-rack/unsupported_operation'
+require 'fakes3-rack/errors'
 
-module FakeS3
+module FakeS3Rack
   require 'webrick'
   class Request
     CREATE_BUCKET = "CREATE_BUCKET"

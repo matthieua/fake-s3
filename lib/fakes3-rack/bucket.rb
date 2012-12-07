@@ -1,9 +1,9 @@
 require 'builder'
 require 'thread'
-require 'fakes3/s3_object'
-require 'fakes3/sorted_object_list'
+require 'fakes3-rack/s3_object'
+require 'fakes3-rack/sorted_object_list'
 
-module FakeS3
+module FakeS3Rack
   class Bucket
     attr_accessor :name,:creation_date,:objects
 

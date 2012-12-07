@@ -1,5 +1,5 @@
 require 'set'
-module FakeS3
+module FakeS3Rack
   class S3MatchSet
     attr_accessor :matches,:is_truncated
     def initialize

@@ -1,4 +1,4 @@
-module FakeS3
+module FakeS3Rack
   class S3Object
     include Comparable
     attr_accessor :name,:size,:creation_date,:md5,:io,:content_type

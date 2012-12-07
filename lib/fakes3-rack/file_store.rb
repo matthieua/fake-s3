@@ -1,12 +1,12 @@
 require 'fileutils'
 require 'time'
-require 'fakes3/s3_object'
-require 'fakes3/bucket'
-require 'fakes3/rate_limitable_file'
+require 'fakes3-rack/s3_object'
+require 'fakes3-rack/bucket'
+require 'fakes3-rack/rate_limitable_file'
 require 'digest/md5'
 require 'yaml'
 
-module FakeS3
+module FakeS3Rack
   class FileStore
     SHUCK_METADATA_DIR = ".fakes3_metadataFFF"
 

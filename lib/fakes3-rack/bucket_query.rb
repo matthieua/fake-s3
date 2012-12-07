@@ -1,4 +1,4 @@
-module FakeS3
+module FakeS3Rack
   class BucketQuery
     attr_accessor :prefix,:matches,:marker,:max_keys,
                   :delimiter,:bucket,:is_truncated

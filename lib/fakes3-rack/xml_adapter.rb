@@ -1,7 +1,7 @@
 require 'builder'
 require 'time'
 
-module FakeS3
+module FakeS3Rack
   class XmlAdapter
     def self.buckets(bucket_objects)
       output = ""
@@ -10,7 +10,7 @@ module FakeS3
       xml.ListAllMyBucketsResult(:xmlns => "http://s3.amazonaws.com/doc/2006-03-01/") { |lam|
         lam.Owner { |owner|
           owner.ID("123")
-          owner.DisplayName("FakeS3")
+          owner.DisplayName("FakeS3Rack")
         }
         lam.Buckets { |buckets|
           bucket_objects.each do |bucket|

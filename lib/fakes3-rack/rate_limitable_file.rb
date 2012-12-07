@@ -1,4 +1,4 @@
-module FakeS3
+module FakeS3Rack
   class RateLimitableFile < File
     @@rate_limit = nil
     # Specify a rate limit in bytes per second

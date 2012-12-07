@@ -1,6 +1,6 @@
 require 'test/test_helper'
 require 'fileutils'
-#require 'fakes3/server'
+#require 'fakes3-rack/server'
 require 'aws/s3'
 
 class S3CommandsTest < Test::Unit::TestCase
